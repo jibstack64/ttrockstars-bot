@@ -41,12 +41,14 @@
             // start running
             running = true;
             // add "hacks enabled" message
-            let el = document.createElement("b");
+            let el = document.createElement("a");
+            el.setAttribute("href", "https://github.com/jibstack64/ttrockstars-bot");
+            el.setAttribute("target", "_blank");
             for (var i = 0; i < top.children.length; i++) {
                 top.children[i].remove()
             }
-            el.style = "width: auto;align-items: center;margin-top: 10px;margin-bottom: 10px;padding: 5px;border: 2px solid red; font-size: 20px;";
-            el.innerHTML = " -> BOT ENABLED";
+            el.style = "background-color: black; color: greenyellow; width: auto;align-items: center;margin-top: 10px;margin-bottom: 10px;padding: 5px;border: 2px solid red; font-size: 20px; font-style: bold; font-family: monospace;";
+            el.innerHTML = "🤖 BOT ENABLED 🔥";
             top.appendChild(el);
     
             var id = setInterval(() => {
@@ -83,16 +85,19 @@
             }, 225);
         } else {
             running = false;
-            let elems = document.getElementsByClassName("mat-button-wrapper");
-            var play_again = null;
-            for (var i = 0; i < elems.length; i++) {
-                if (elems[i].innerHTML.toLowerCase().includes("Play again")) {
-                    play_again = elems[i];
-                    break
-                }
+            var play = document.getElementsByClassName("w-full sm:px-4 max-w-4xl")[0];
+            if (play != undefined) {
+                play.children[0].click();
+            } else {
+                // eh
+                /*play = document.getElementsByClassName("mat-focus-indicator margin-5 play-button stamp mat-raised-button mat-button-base mat-accent ng-star-inserted")[0];
+                if (play != undefined) {
+                    play.click();
+                }*/
             }
-            if (play_again != null) {
-                play_again.click();
+            var gameOver = document.getElementsByClassName("stamp center mat-white-color")[0];
+            if (gameOver != undefined) {
+                gameOver.innerHTML = "game won 😉"
             }
         }
 
