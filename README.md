@@ -4,7 +4,8 @@
 
 *A bot for TTRockstars. Made for my sister.*
 
-Add the contents of `bot.js` to a script in your TamperMonkey dashboard.
+### Install
+Click on the `ttrockstars.user.js` file and click the `Raw` button. Presuming you have TamperMonkey installed, you should be prompted to install the script.
 
 ---
 
