@@ -85,15 +85,9 @@
             }, 225);
         } else {
             running = false;
-            var play = document.getElementsByClassName("w-full sm:px-4 max-w-4xl")[0];
+            play = document.getElementsByClassName("mat-focus-indicator margin-5 play-button stamp mat-raised-button mat-button-base mat-accent ng-star-inserted")[0];
             if (play != undefined) {
-                play.children[0].click();
-            } else {
-                // eh
-                /*play = document.getElementsByClassName("mat-focus-indicator margin-5 play-button stamp mat-raised-button mat-button-base mat-accent ng-star-inserted")[0];
-                if (play != undefined) {
-                    play.click();
-                }*/
+                play.click();
             }
             var gameOver = document.getElementsByClassName("stamp center mat-white-color")[0];
             if (gameOver != undefined) {
