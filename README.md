@@ -5,3 +5,7 @@
 *A bot for TTRockstars. Made for my sister.*
 
 Add the contents of `bot.js` to a script in your TamperMonkey dashboard.
+
+---
+
+<img src="https://user-images.githubusercontent.com/107510599/215262791-e138153d-0e51-49a1-bbc0-3a8284ee07d7.png" width="456px"> <img src="https://user-images.githubusercontent.com/107510599/215262789-d3f6949a-5591-4e93-a8ea-07dc46c001d9.png" width="550px">
