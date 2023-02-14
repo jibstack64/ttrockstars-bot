@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         TTROCK-bot
-// @namespace    https://jibstack64.github.io
+// @namespace    https://github.com/jibstack64/ttrockstars-bot
 // @version      0.1
 // @description  Times Tables Rockstars bot.
 // @author       jibstack64
