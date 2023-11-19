@@ -2,9 +2,9 @@
 // @name         TTROCK-bot
 // @namespace    https://github.com/jibstack64/ttrockstars-bot
 // @version      0.1
-// @description  Times Tables Rockstars bot.
-// @author       jibstack64
-// @match        https://play.ttrockstars.com/*
+// @description  Times Tables Rockstars bot
+// @author       Coreyplayz
+// @match       https://play.ttrockstars.com/game/home/garage
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=mozilla.org
 // @grant        GM_log
 // ==/UserScript==
