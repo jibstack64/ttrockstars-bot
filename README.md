@@ -2,7 +2,7 @@
 
 ![GitHub](https://img.shields.io/github/license/jibstack64/ttrockstars-bot)
 
-*A bot for TTRockstars. Made for my sister.*
+*A bot for TTRockstars.*
 
 ### Install
 Click on the `ttrockstars.user.js` file and click the `Raw` button. Presuming you have TamperMonkey installed, you should be prompted to install the script.
