@@ -28,11 +28,15 @@
 
     var running = false;
     setInterval(() => {
-        var equation = document.getElementsByClassName("notranslate height-100 noselect current")[0];
+        var equation = document.getElementsByClassName("notranslate h-full noselect current")[0];
         var input = document.getElementsByClassName("input-holder width-100")[0];
+        if (input == undefined || input == null) {
+            input = document.getElementsByClassName("input-holder width-100 hint")[0];
+        }
         var enter = document.getElementsByClassName("key-ent ng-star-inserted")[0];
         var top = document.getElementsByClassName("next-game-question padding-5")[0];
         var keypad = document.getElementsByClassName("keyboard mat-white-color bg-2")[0];
+        var play;
 
         if (equation != undefined) {
             if (running) {
