@@ -5,7 +5,9 @@
 *A bot for TTRockstars.*
 
 ### Install
-Click on the `ttrockstars.user.js` file and click the `Raw` button. Presuming you have TamperMonkey installed, you should be prompted to install the script.
+Click on the `ttrockstars.user.js` file and click the `Raw` button. Presuming you have TamperMonkey installed, you should be prompted to install the script.  
+
+You **MUST** have numpad enabled for this exploit to work.
 
 ---
 
