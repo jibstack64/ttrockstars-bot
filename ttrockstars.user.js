@@ -28,7 +28,7 @@
 
     var running = false;
     setInterval(() => {
-        var equation = document.getElementsByClassName("notranslate h-full noselect current")[0];
+        var equation = document.getElementsByClassName("notranslate height-100 noselect current")[0];
         var input = document.getElementsByClassName("input-holder width-100")[0];
         if (input == undefined || input == null) {
             input = document.getElementsByClassName("input-holder width-100 hint")[0];
@@ -54,7 +54,7 @@
             el.style = "background-color: black; color: greenyellow; width: auto;align-items: center;margin-top: 10px;margin-bottom: 10px;padding: 5px;border: 2px solid red; font-size: 20px; font-style: bold; font-family: monospace;";
             el.innerHTML = "🤖 BOT ENABLED 🔥";
             top.appendChild(el);
-    
+
             var id = setInterval(() => {
                 if (running) {
                     let raw = equation.innerHTML.replace("×", "*").replace("÷", "/");
@@ -64,13 +64,13 @@
                     raw = raw.trim();
                     let answer = String(eval(raw));
                     GM_log("answer: " + answer);
-        
+
                     // example: 30 <!---->÷<!----><!----> 5 <!----><!----><!----><!---->
                     /*let el = "<span class=\"notranslate ng-star-inserted\">"+String(answer)+"</span>";
                     if (!input.innerHTML.includes(el)) {
                         input.innerHTML = "<span class=\"notranslate ng-star-inserted\">"+String(answer)+"</span>" + input.innerHTML
                     }*/
-                    
+
                     [...answer].forEach(char => {
                         for (var row = 0; row < keypad.children.length; row++) {
                             for (var key = 0; key < keypad.children[row].children.length; key++) {
