@@ -58,6 +58,9 @@
             var id = setInterval(() => {
                 if (running) {
                     let raw = equation.innerHTML.replace("×", "*").replace("÷", "/");
+                    raw = raw.split("<!---->");
+                    raw.shift(); raw = raw.join("");
+                    console.log(raw);
                     while (raw.includes("<!---->")) {
                         raw = raw.replace("<!---->", "");
                     }
