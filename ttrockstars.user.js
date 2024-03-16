@@ -58,13 +58,13 @@
             var id = setInterval(() => {
                 if (running) {
                     let raw = equation.innerHTML.replace("×", "*").replace("÷", "/");
-                    raw = raw.split("<!---->");
-                    raw.shift(); raw = raw.join("");
                     console.log(raw);
                     while (raw.includes("<!---->")) {
                         raw = raw.replace("<!---->", "");
                     }
+                    raw = raw.replace(/<\s*span[^>]*>.*?<\s*\/\s*span\s*>/g, ''); // i'm fairly sure this is the ttrockstar's developers trying to combat the exploit
                     raw = raw.trim();
+                    console.log(raw);
                     let answer = String(eval(raw));
                     GM_log("answer: " + answer);
 
@@ -92,10 +92,6 @@
             }, 225);
         } else {
             running = false;
-            play = document.getElementsByClassName("mat-focus-indicator margin-5 play-button stamp mat-raised-button mat-button-base mat-accent ng-star-inserted")[0];
-            if (play != undefined) {
-                play.click();
-            }
             var gameOver = document.getElementsByClassName("stamp center mat-white-color")[0];
             if (gameOver != undefined) {
                 gameOver.innerHTML = "game won 😉"
